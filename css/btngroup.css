@@ -1,0 +1,118 @@
+.btn_group{
+    display: flex;
+    font-family: "FuturaMediumC";
+    margin-bottom: 32px;
+    align-items: center;
+}
+.btn_group .btn{
+  font-size: 16px;
+  line-height: 18px;
+  padding: .51rem 0.9rem .38rem 0.9rem;
+}
+.btn_group .btn:not(:last-child){
+  margin-right: -1px;
+}
+.btn_group .btn-danger,
+.btn_group .btn-success{
+  position: relative;
+  z-index: 1;
+}
+.btn_group .btn-outline-secondary{
+ background: #ffffff;
+}
+.sort_group .btn{
+  padding: .41rem 0.3rem .31rem 0.3rem;
+  width: 42px;
+}
+.btn_group.sort_group .btn{
+  margin-right: 0px;
+}
+
+.btn_filter {
+  padding: 9px 12px 7px 12px;
+  border-radius: 2px;
+  border: 1px solid var(--mainGreen);
+  font-size: 12px;
+  font-family: "FuturaMediumC";
+  margin-right: 4px;
+  line-height: 12px;
+  white-space: nowrap;
+}
+.btn_filter:hover {
+  border-color: #FF3B6A;
+  color: #fff;
+  background-color: var(--textRed);
+}
+
+.btn_filter:last-child {
+  margin: 0;
+}
+
+.active_btn_filter {
+  background-color: #FF3B6A;
+  border-color: #FF3B6A;
+  color: #ffffff;
+}
+.active_btn_filter:hover {
+  color: #ffffff;
+}
+
+.item:hover > img {
+  filter: invert(100%) brightness(90%);
+}
+.sort_list .item:hover a.sort_link {
+  color: #FF3B6A;
+}
+
+.active_item:hover img {
+  filter: brightness(0%);
+}
+.sort_list .active_item:hover a.sort_link {
+  color: #020611;
+}
+
+.sort_btn {
+  color: var(--mainGreen);
+  padding: 7px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+.sort_btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.btn_all {
+  display: block;
+  min-width: 100%;
+  color: var(--mainGreen);
+  border: 1px solid var(--mainGreen);
+  font-family: "FuturaMediumC";
+  font-size: 12px;
+  line-height: 12px;
+  padding: 15px 24px 13px 24px;
+}
+.btn_all:hover {
+  color: var(--gray2);
+  border: 1px solid var(--gray2);
+}
+
+@media (max-width: 993px) {
+  .btn_group{
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* display: -webkit-box; */
+    width: 100%;
+    margin-bottom: 0;
+    flex-wrap: initial;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/* @media (max-width: 768px) {
+  .main_section .product_section .pd_top_a4 .pd-bt-6a {
+    padding: 0 25px;
+  }
+} */

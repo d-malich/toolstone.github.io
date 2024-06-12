@@ -1,0 +1,72 @@
+.registration_form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+.registration_form_box form {
+  width: 432px;
+}
+.registration_form_box .header_form {
+  background-color: #F9FAFF;
+  padding: 17px 20px 13px 20px;
+  border-radius: 2px 2px 0 0;
+  line-height: 22px;
+}
+.registration_form_box .header_form span {
+  color: #020611;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "FuturaMediumC";
+  line-height: 22px;
+  font-weight: 500;
+}
+.registration_form_box form .body_form {
+  padding: 33px 21px 0 21px;
+  border-left: 1px solid #F3F5FF;
+  border-right: 1px solid #F3F5FF;
+}
+.registration_form_box form .body_form .input_wrapper:not(:last-child) {
+  margin-bottom: 24px;
+}
+.registration_form_box form .body_form .title {
+  font-family: "FuturaMediumC";
+  color: #020611;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.registration_form_box form .body_form .input_wrapper.input_label .form-control {
+  max-height: 104px;
+}
+
+.registration_form_box form .body_form .contact_info .input_wrapper:not(:last-child) {
+  margin-bottom: 16px;
+}
+.registration_form_box .footer_form {
+  border-radius: 0 0 2px 2px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #F3F5FF;
+  border-top: none;
+}
+
+.registration_form_box .title_form {
+  font-family: "FuturaMediumC";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 37px;
+  color: #020611;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  .registration_form_box .title_form {
+    font-size: 24px;
+    line-height: 24px;
+    color: #020611;
+    margin-bottom: 16px;
+  }
+}

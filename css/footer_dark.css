@@ -1,0 +1,304 @@
+.footer{
+    font-family: "FuturaBookC Regular";
+    font-family: "FuturaMediumC";
+    padding-left: 50px;
+    padding-right: 49px;
+    padding-top: 40px;
+}
+
+.footer .form_inpt .search_input{
+    min-width: 197px;
+}
+.footer .form_inpt .btn{
+    min-width: 56px;
+}
+.footer .form_inpt .btn i{
+    font-size: 20px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    max-width: 1791px;
+    margin: 0;
+    /* min-width: 100%; */
+}
+.footer.footer_dark{
+    background: var(--linkBlack);
+}
+.footer.footer_dark,
+.footer.footer_dark a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.footer_top{
+    padding-bottom: 50px;
+}
+.footer_labels{
+    border-bottom: 0.5px solid var(--footerDarkLine);
+    padding: 25px 0px;
+    margin-bottom: 32px;
+}
+.footer_top .footer_label{
+    font-family: "FuturaDemiC";
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    display: block;
+    color: var(--borderColor);
+}
+.footer_nav{
+    font-size: 13px;
+    line-height: 16px;
+}
+.footer .footer_label{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer .footer_label.contacts {
+    margin-bottom: 15px;
+}
+.footer_bottom{
+    font-size: 12px;
+    line-height: 14px;
+    /* border-top: 0.5px solid var(--footerDarkLine); */
+    padding: 3px 0px 42px 0px;
+}
+.footer_bottom .itm:not(:last-child){
+    margin-right: 4px;
+    font-size: 14px;
+    line-height: 17px;
+}
+/* .footer_row{
+    line-height: 120%;
+} */
+.footer_row {
+    line-height: normal;
+    display: grid;
+}
+
+.footer_row span.green {
+    display: inline-block;
+    line-height: 17px;
+    word-spacing: 0.5px;
+}
+.footer_row a.green {
+    display: inline-block;
+    line-height: 17px;
+}
+
+.footer_row:not(:last-child){
+    margin-bottom: 16px;
+}
+.footer_row .title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #9299B1;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.footer_row .title.inside_text {
+    margin-bottom: 0;
+}
+.footer_row .title a {
+    color: #9299B1;
+    margin-right: 6px;
+    font-size: 12px;
+}
+.footer .phone{
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 17px;
+}
+/* .footer .phone_list .phone:not(:last-child){
+    margin-bottom: 6px;
+} */
+.footer .contact_bottom{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 15px;
+}
+.footer .contact_bottom i{
+    margin-right: 5px;
+}
+.footer a:hover{
+    color: var(--mainGreen);
+}
+.footer .footer_bottom a{
+    color: var(--mainGreen);
+}
+.footer_dark .social_list a{
+    border-color: var(--gray1);
+}
+.footer .footer_in_txt{
+    font-family: 'Montserrat';
+    color: #9299B1;
+    font-size: 11px;
+    line-height: 13px;
+}
+.footer .footer_nav li:not(:last-child){
+    margin-bottom: 21px;
+}
+.footer .footer_nav li a{
+    line-height: 17px;
+    display: inline-block;
+    color: var(--mainGreen);
+}
+.footer .form_inpt{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+}
+/* .footer .form_inpt .form-control{
+    border: 1px solid var(--borderColor5);
+    background: transparent;
+} */
+.footer .form_inpt .mail_button{
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    color: var(--mainGreen);
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    outline: none!important;
+}
+.footer .form_inpt .mail_button:hover{
+    color: var(--red);
+}
+.footer_social_list {
+    display: flex;
+    align-items: center;
+    max-height: 16px;
+}
+.footer_social_list li:not(:last-child){
+    margin-right: 26px;
+}
+.footer.footer_dark .footer_social_list li a{
+    display: block;
+    color: var(--mainGreen);
+}
+.footer.footer_dark .footer_social_list li a .icon-vk{
+    font-size: 13px;
+    /* line-height: 28px; */
+}
+.footer.footer_dark .footer_social_list li a .icon-facebook{
+    font-size: 14px;
+    /* line-height: 30px; */
+}
+.footer.footer_dark .footer_social_list li a .icon-instagram{
+    font-size: 14px;
+    /* line-height: 30px; */
+}
+.footer.footer_dark .footer_social_list li a .icon-youtube{
+    font-size: 14px;
+    /* line-height: 28px; */
+}
+.footer.footer_dark .footer_social_list li a:hover{
+    color: var(--red);
+}
+.footer .col{
+    padding: 0;
+    margin: 0 15px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    flex-grow: 0;
+}
+.footer .col.contacts {
+    min-width: 253px;
+}
+@media (max-width: 1200px) {
+    .footer_bottom .flex{
+        display: block;
+    }
+    .footer_bottom .itm:not(:last-child) {
+        margin: 0;
+        margin-bottom: 4px;
+    }
+}
+/* @media (min-width: 994px) {
+    .footer_bottom{
+        padding-top: 23px;
+        padding-bottom: 23px;
+        margin-top: 64px;
+    }
+    .footer{
+        padding-top: 32px;
+    }
+    .footer_row.double_margin{
+        margin-bottom: 54px;
+    }
+}
+@media (max-width: 993px) {
+    .footer_bottom .flex{
+        display: block;
+    }
+    .footer_bottom .footer_in_txt{
+        margin-top: 4px;
+    }
+    .footer_bottom{
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    .footer{
+        padding-top: 30px;
+    }
+    .footer .form_inpt{
+        max-width: 60%;
+    }
+    .footer_row.double_margin{
+        margin-bottom: 34px;
+    }
+} */
+@media screen and (max-width: 400px) {
+    .footer .footer_nav li:not(:last-child){
+        margin-bottom: 29px;
+    }
+    .footer .footer_label {
+        margin-bottom: 23px;
+    }
+    /* .footer .form_inpt{
+        max-width: 80%;
+    } */
+}
+
+@media (min-width: 1921px) {
+    .footer .row {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        padding-left: 11px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .footer_bottom {
+        padding-bottom: 20px;
+    }
+    
+}

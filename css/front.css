@@ -1,0 +1,180 @@
+.main_front h2.page_title{
+    margin-bottom: 16px;
+}
+.inf_img.training{
+    text-align: right;
+}
+.front_section.pd_top_a6{
+    padding-top: 48px;
+}
+.pd_bt_6a{
+    padding-bottom: 48px;
+}
+.row_partners:first-child{
+    border-top: none;
+}
+.row_partners{
+    border-bottom: none;
+    margin-bottom: 24px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.partner_card{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 8px 0;
+}
+/* .partner_list{
+    margin-bottom: 32px;
+} */
+
+.main_page_big_slider .swiper-slide {
+    max-height: 464px;
+    height: 464px;
+    background-color: #F1F3FF;
+}
+.main_page_big_slider .swiper-slide .slide_box {
+    display: flex;
+    min-height: 100%;
+}
+.main_page_big_slider .swiper-slide .slide_img {
+    min-width: 50%;
+    min-height: 100%;
+    background: url(../image/main-page-slide-photo.svg) no-repeat;
+    background-position: center;
+    mix-blend-mode: multiply;
+    margin-bottom: 32px;
+}
+.main_page_big_slider .swiper-slide .slide_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_page_big_slider .swiper-slide .slide_text h1 {
+    font-family: 'FuturaDemiC';
+    font-size: 40px;
+    line-height: 40px;
+}
+.main_page_big_slider .swiper-slide .slide_text p {
+    font-family: 'FuturaBookC Regular';
+    color: #FF3B6A;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 32px;
+}
+.main_page_big_slider .swiper-slide .slide_text img {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1440px) {
+    .main_page_big_slider .swiper-slide {
+        max-height: 454px;
+        height: 454px;
+    }
+}
+
+@media (max-width: 993px) {
+    .main_page_big_slider .swiper-slide {
+        max-height: 640px;
+        height: 640px;
+    }
+    .main_page_big_slider .swiper-slide .slide_box {
+        flex-direction: column;
+    }
+    .main_page_big_slider .swiper-slide .slide_img {
+        min-width: 100%;
+        min-height: 320px;
+    }
+    .main_page_big_slider .swiper-slide .slide_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 320px;
+        padding: 20px;
+    }
+}
+@media (max-width: 993px) {
+    .main_page_big_slider .swiper-slide {
+        max-height: 400px;
+        height: 400px;
+    }
+    .main_page_big_slider .swiper-slide .slide_box {
+        flex-direction: column;
+    }
+    .main_page_big_slider .swiper-slide .slide_img {
+        min-width: 100%;
+        min-height: 217px;
+        background-size: contain;
+    }
+    .main_page_big_slider .swiper-slide .slide_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 183px;
+        padding: 20px;
+    }
+    .main_page_big_slider .swiper-slide .slide_text h1 {
+        font-family: 'FuturaDemiC';
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .main_page_big_slider .swiper-slide .slide_text p {
+        font-family: 'FuturaBookC Regular';
+        color: #FF3B6A;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+    .main_page_big_slider .swiper-slide .slide_text img {
+        height: 15px;
+        margin-bottom: 12px;
+    }
+
+    .center_ab_img {
+        margin-right: 0!important;
+        /* margin: 0 auto; */
+        margin-bottom: 16px;
+    }
+
+    .training_about.adaptive-visible {
+        display: none;
+    }
+    .front_section.adaptive-visible {
+        display: none;;
+    }
+
+    .training_about .row.text_big_block {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 994px) {
+    .partner_col:not(:last-child){
+        border-right: none;
+    }
+}
+/* @media (max-width: 993px) {
+    .partner_col:nth-child(5),
+    .partner_col:nth-child(3),
+    .partner_col:nth-child(1){
+        border-right: 0.5px solid var(--gray2);
+    }
+    .section_popular_cat{
+        padding-top: 24px;
+    }
+    .partner_col{
+        border-bottom: 0.5px solid var(--gray2);
+    }
+    .row_partners{
+        margin-bottom: -1px;
+        border-left: 0.5px solid var(--gray2);
+    }
+} */

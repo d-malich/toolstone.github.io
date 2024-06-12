@@ -1,0 +1,141 @@
+.training_card{
+    position: relative;
+}
+.training_card.default{
+    /* border: 0.5px solid var(--borderColor); */
+    border-radius: 4px;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08); */
+    background-color: #fff;
+    cursor: pointer;
+}
+.training_card.default:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+    /* background-color: #fff; */
+}
+.training_card.default:hover .btn {
+    background-color: var(--textRed)!important;
+}
+.training_card.default .training_footer .btn{
+    padding: 10px 24px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.training_card > a{
+    color: var(--linkBlack);
+}
+.training_card .training_header{
+    /* border-bottom: 1px solid var(--borderColor3); */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 4px;
+}
+.training_card.video .training_header{
+    padding-bottom: 56%;
+}
+.training_card.video .training_header img{
+    width: 100%;
+}
+.training_card .training_header figure{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-height: 308px;
+}
+.training_card .training_header figure picture{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.training_card .training_header figure picture img{
+    object-fit: cover;
+    vertical-align: middle;
+    -o-object-fit: cover;
+    width: 100%;
+}
+.training_card .training_title{
+    font-family: "FuturaMediumC";
+}
+/* .training_card.default .training_title{
+    max-width: 300px;
+} */
+.training_card.video .training_title{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.training_card  .training_section{
+    text-align: center;
+}
+.training_card .training_text{
+    font-size: 13px;
+    color: #020611;
+    line-height: 27.75px;
+    margin: 0px 3px;
+}
+.training_card .training_footer{
+    text-align: center;
+    padding: 24px 0 20px 0;
+}
+.training_card.video .training_header::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #01040C;
+    opacity: 0.3;
+}
+.video_list .training_card.video .training_header{
+    padding-bottom: 45%;
+}
+
+
+
+@media (min-width: 994px) {
+    .training_card.default{
+        margin-bottom: 40px;
+    }
+    /* .training_card.default{
+        padding-bottom: 48px;
+    } */
+    .training_card.default .training_title{
+        font-size: 22px;
+        line-height: 26px;
+        margin: 24px 21px;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+    .training_card.video .training_title{
+        font-size: 28px;
+        line-height: 32px;
+        padding-right: 80px;
+    }
+    .video_list .training_card.video  .training_title{
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 993px) {
+    .training_card.default{
+        margin-bottom: 20px;
+    }
+    /* .training_card.default{
+        padding-bottom: 20px;
+    } */
+    .training_card.default .training_title{
+        font-size: 22px;
+        line-height: 28px;
+        margin: 20px auto 14px auto;
+    }
+    .training_card.video .training_title{
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

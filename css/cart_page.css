@@ -1,0 +1,331 @@
+.cart_block{
+    border-radius: 2px;
+    border: 0.5px solid var(--gray2);
+}
+.cart_block .cart_block_container{
+    max-width: 1128px;
+    margin: 0px auto;
+}
+.cart_block:not(:last-child){
+    margin-bottom: 16px;
+}
+.summary_price{
+    margin-bottom: 26px;
+}
+.summary_price > label{
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    font-family: "FuturaDemiC";
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+.summary_price .item{
+    display: flex;
+    align-items: baseline;
+}
+.summary_price .item:not(:last-child){
+    margin-bottom: 11px;
+}
+.summary_price .item span{
+    color: var(--gray1);
+    margin-right: 6px;
+    font-family: "FuturaBookC Regular";
+}
+.summary_price .item .price{
+    font-family: "FuturaDemiC";
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--black);
+}
+.summary_price .item .price i{
+    font-size: 12px;
+}
+.summary_price .item .custom-control{
+    font-size: 11px;
+    margin-top: 8px;
+}
+.summary_price .custom-control-label::before{
+    top: -1px;
+}
+.summary_price .custom-control-label::after{
+    top: 4px!important;
+}
+.cart_block .cart_buy{
+    padding: .95rem 1.6rem .92rem 1.6rem;
+}
+.cart_end{
+    padding-left: 20px;
+}
+.delivery_wrapper{
+    border-left: 0.5px solid #CFCFCF;
+    border-right: 0.5px solid #CFCFCF;
+    border-bottom: 0.5px solid #CFCFCF;
+    border-radius: 0px 0px 2px 2px;
+    padding: 5px 24px 20px 24px;
+}
+.radio_delivery .delivery_wrapper{
+    display: none;
+}
+.radio_delivery .custom-control-input:checked~.custom-control-label~.delivery_wrapper{
+    display: block;
+}
+.radio_delivery .custom-control-input:checked~.custom-control-label{
+    border-bottom: transparent;
+    border-radius: 2px 2px 0px 0px;
+}
+.inp_name{
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+    font-family: "FuturaMediumC";
+    margin-bottom: 12px;
+}
+.table_footer{
+    border: 1px solid #dfe1e8;
+    background: #fafafa;
+}
+.table_footer .cart_block_container{
+    justify-content: space-between;
+}
+.table_footer .footer_price .it_label{
+    font-size: 12px;
+    font-family: "FuturaBookC Regular";
+    margin-bottom: 4px;
+    width: 100%;
+}
+.table_footer .footer_price .price_ekonom{
+    letter-spacing: 0.01em;
+    font-size: 10px;
+    color: var(--mainGreen);
+    padding-top: 6px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.table_footer .footer_price .price_wrap{
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.table_footer .footer_price .price_current{
+    font-family: "FuturaDemiC";
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black);
+}
+.table_footer .footer_price .price_current i{
+    font-size: 15px;
+}
+.table_footer .footer_price .price_old{
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 9px;
+    font-family: "FuturaBookC Regular";
+    color: var(--gray5);
+}
+.table_footer .footer_price .price_old span{
+    text-decoration-line: line-through;
+}
+.table_footer .footer_price .price_old i{
+    font-size: 10px;
+}
+.table_footer .footer_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_sum{
+    display: flex;
+    align-items: baseline;
+    padding-top: 22px;
+}
+.main_sum label{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "FuturaMediumC";
+    margin-right: 6px;
+    margin-bottom: 0px;
+    color: #010109;
+}
+.summary_price .main_sum .price{
+    font-size: 24px;
+    line-height: 26px;
+}
+.summary_price .main_sum .price i{
+    font-size: 16px;
+}
+@media (min-width: 994px) {
+    .delivery_wrapper .name_dym{
+        margin-bottom: 12px;
+        min-height: 16px;
+    }
+    .cart_block{
+        padding: 30px;
+    }
+    .cart_block .cart_block_label{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 17px;
+    }
+    .delivery_wrapper .wrapper_padding{
+        padding-left: 1.6rem;
+    }
+    .delivery_wrapper .form-row:not(:last-child){
+        margin-bottom: 16px;
+    }
+    .del_row{
+        margin-right: -15px!important;
+        margin-left: -15px!important;
+    }
+    .del_col{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+}
+@media (max-width: 993px) {
+    .cart_block{
+        padding: 15px;
+    }
+    .cart_block .cart_block_label{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .table_footer .cart_block_container{
+        display: block;
+    }
+    .table_footer .footer_price{
+        margin-top: 15px;
+        justify-content: flex-end;
+    }
+    .cart_block .custom-radio .custom-control-label{
+        padding: 15px 14px;
+    }
+}
+
+.cart_buy_form_block {
+    display: flex;
+    flex-direction: column;
+    font-family: 'FuturaMediumC';
+    margin-top: 16px;
+    border-radius: 2px;
+    border: 1px solid #F3F5FF;
+}
+.cart_buy_form_block .form_header {
+    background: #F9FAFF;
+    color: #020611;
+    padding: 16px 20px 12px 20px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.cart_buy_form_block .form_body {
+    padding: 30px;
+
+}
+.cart_buy_form_block .form_body > .form {
+    max-width: 1012px;
+    margin: 0 auto;
+}
+.cart_buy_form_block .form_body > .form .form_checkbox {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    border-radius: 2px;
+    background: #F9FAFF;
+    margin-bottom: 10px;
+}
+.cart_buy_form_block .form_body > .form .custom-control {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 0;
+    height: 18px;
+}
+.cart_buy_form_block .form_body > .form .custom-control-label {
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+}
+.cart_buy_form_block .form_body > .form .custom-control-label::before {
+    top: 0;
+    width: 18px;
+    height: 18px;
+}
+.cart_buy_form_block .form_body > .form .custom-control-label::after {
+    top: calc(50% - 4px);
+}
+.cart_buy_form_block .form_body > .form .form_checkbox > span.price{
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--mainGreen);
+}
+.cart_buy_form_block .form_body > .form > .big_form {
+    padding: 20px;
+    border: 1px solid #E6E9F8;
+    border-radius: 2px;
+}
+.cart_buy_form_block .form_body > .form > .big_form .form_row {
+    margin-bottom: 16px;
+    width: 100%;
+}
+.cart_buy_form_block .form_body > .form > .big_form .signature {
+    font-size: 14px;
+    line-height: 14px;
+}
+.cart_buy_form_block .form_body > .form > .big_form .address .input_wrapper {
+    max-width: 84px;
+}
+.cart_buy_form_block .form_body > .form .total_form {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+}
+.cart_buy_form_block .form_body > .form .total_form > .input_wrapper{
+    width: 628px;
+    margin-right: 32px;
+}
+.cart_buy_form_block .form_body > .form .total_form > .input_wrapper textarea {
+    height: 100%;
+}
+.cart_buy_form_block .form_body > .form .total_form .comment{
+    width: fit-content;
+    margin-top: 0;
+}
+.cart_buy_form_block .form_body > .form .total_form .total_price_block {
+    width: fit-content;
+    margin: 0 !important;
+}
+
+@media (max-width: 1280px) {
+    .cart_buy_form_block .form_body > .form .total_form > .input_wrapper {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cart_buy_form_block .form_body {
+        padding: 20px;
+    }
+    .cart_buy_form_block .form_body > .form .total_form > .input_wrapper {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .cart_buy_form_block .form_body > .form .form_row {
+        flex-flow: wrap;
+    }
+    .cart_buy_form_block .form_body > .form .form_row > .input_wrapper {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    } 
+    .cart_buy_form_block .form_body > .form .form_row > .input_wrapper:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .cart_buy_form_block .form_body > .form .address .input_wrapper {
+        width: 100%;
+        max-width: none;
+    }
+}

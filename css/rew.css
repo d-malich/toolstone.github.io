@@ -1,0 +1,117 @@
+.rew_card{
+    display: block;
+    background: var(--gray4);
+    border-radius: 1px;
+    padding: 36px;
+}
+.rew_card img{
+    border-radius: 1px;
+}
+.rew_card_text{
+    background: #F9FAFF;
+    position: relative;
+    color: var(--black3);
+    z-index: 1;
+    /* max-width: 432px; */
+    border-radius: 4px;
+}
+.rew_card_text:not(.rew_card_big) .rew_img img{
+    max-width: 116px;
+    max-height: 116px;
+}
+.rew_card_text.rew_card_big .rew_img img{
+    max-width: 115px;
+    max-height: 115px;
+}
+.rew_card_text .rew_img img{
+    border-radius: 50%;
+}
+.rew_card_text .rew_inf p{
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) -2%, #F9FAFF 8%);
+}
+/* .rew_card_text .rew_user::before{
+    content: "";
+    height: 1px;
+    width: 107px;
+    background: var(--gray2);
+    margin-bottom: 20px;
+    display: block;
+} */
+.rew_card_text .rew_user .name{
+    font-size: 16px;
+    font-family: "FuturaMediumC";
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+.rew_card_text .rew_user .city{
+    font-family: "FuturaBookC Regular";
+    font-size: 12px;
+    line-height: 12px; 
+    letter-spacing: 0.05em;
+}
+.rew_card_text.rew_card_big:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.training_rew .swiper-slide {
+    /* margin-right: 32px!important; */
+}
+
+/* .other_news.overflow_h .news_slider .three_in_row .swiper-slide {
+    width: 100%!important;
+    max-width: 432px;
+    margin-right: 31px!important;
+} */
+/* .other_news.overflow_h .news_slider .swiper-slide {
+    max-width: 316px;
+    margin-right: 31px!important;
+} */
+
+@media (min-width: 401px) {
+    .rew_card_text{
+        padding: 40px 25px;
+    }
+    .rew_card_text .rew_img{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+    .rew_card_text:not(.rew_card_big) .rew_inf{
+        padding-left: 94px;
+        z-index: 5;
+    }
+    .rew_card_text.rew_card_big .rew_inf{
+        padding-left: 144px;
+    }
+}
+@media (max-width: 400px) {
+    .rew_card_text{
+        padding: 20px 20px;
+    }
+    .rew_card_text .rew_img{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+    .rew_card_text .rew_img img {
+        width: 100px;
+        height: 100px;
+    }
+    .rew_card_text:not(.rew_card_big) .rew_inf{
+        padding-left: 70px;
+        z-index: 5;
+    }
+    .rew_card_text.rew_card_big .rew_inf{
+        padding-left: 144px;
+    }
+    .rew_card_text .rew_inf p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+}

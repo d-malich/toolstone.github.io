@@ -1,0 +1,77 @@
+.full_product .product_info {
+    max-width: 660px;
+    margin-left: 36px;
+}
+.full_product .gallery_wrap {
+    max-width: 664px;
+}
+
+.full_product .product_title{
+    font-family: "FuturaMediumC";
+    color: #020611;
+}
+.full_product .product_desc_text{
+    font-size: 13px;
+    line-height: 26px;
+    color: #020611;
+}
+.full_product .product_info_bottom{
+    /* margin-left: -20px; */
+}
+.full_product .product_info_bottom .itm:not(:last-child){
+    margin-right: 30px;
+}
+@media (min-width: 994px) {
+    .full_product .gallery_wrap {
+        /* padding-right: 22px; */
+    }
+    .full_product .product_image{
+        padding-left: 105px;
+    }
+    .full_product .product_title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 16px;
+    }
+}
+@media (max-width: 993px) {
+    .full_product .product_title{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .gallery_wrap.gallery_slider .gallery-thumbs .swiper-slide{
+        width: 60px!important;
+    }
+}
+@media (max-width: 1330px) {
+    .table_wrapper{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .table_wrapper table{
+        min-width: 1010px;
+    }
+}
+@media (min-width: 999px) and (max-width: 1380px) {
+    .full_product .product_image{
+        padding-left: 0px;
+    }
+}
+@media (min-width: 770px) and (max-width: 990px) {
+    .full_product .product_title{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 920px) and (max-width: 1170px) {
+    .full_product .product_title{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+/* @media (min-width: 760px) and (max-width: 998px) {
+    .gallery_wrap.gallery_slider .gallery-top .image_wrap{
+        padding-bottom: 44%!important;
+    }
+} */

@@ -1,0 +1,208 @@
+.training_about .row {
+    flex-wrap: nowrap;
+    /* max-width: 100%; */
+    /* margin: 0 -13px; */
+    margin: 0;
+}
+.training_about .row .center_ab_img {
+    width: 100%;
+    max-width: 430px;
+    /* margin-right: 77px; */
+}
+.training_about .row .center_ab_img .img-fluid {
+    width: 100%;
+}
+.training_about .row .training_body {
+    max-width: 617px;
+    width: 100%;
+}
+
+.training_about{
+    padding: 60px 0;
+    /* background-color: #F9FAFF; */
+}
+
+.training_about p{
+    font-size: 13px;
+    line-height: 26px;
+    color: #020611;
+    margin-bottom: 16px;
+}
+.training_title{
+    font-family: "FuturaMediumC";
+    color: var(--black);
+}
+.training_video{
+    padding-top: 32px;
+}
+.video_list .item:not(:last-child){
+    margin-bottom: 40px;
+}
+.training_vide_text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.training_vide_text p{
+    margin: 0px auto;
+    max-width: 897px;
+}
+.training_rew{
+    padding-bottom: 48px;
+}
+.training_rew.bg{
+    background: var(--footerCals);
+    margin-bottom: 32px;
+}
+.training_rew h4{
+    font-size: 28px;
+    line-height: 31px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 24px;
+    color: var(--titleColor);
+}
+.other_news .news_card.news_default{
+    margin-bottom: 0;
+}
+
+
+.swiper-button-next.news_carousel3-next, .swiper-button-prev.news_carousel3-prev {
+    top: 25%;
+} 
+
+.bg_grey {
+    background-color: #F9FAFF;
+    /* width: 100vw; */
+    /* margin-left: calc((100vw - 1360px) / -2); */
+    /* margin: 0 -40px; */
+    padding: 30px 0 40px 0;
+}
+@media (max-width: 1440px) {
+    .bg_grey {
+        /* width: 100%; */
+        margin: 0;
+    }
+    }
+.bg_grey div {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+@media (min-width: 622px) and (max-width: 992px) {
+    .video_list{
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .video_list .item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 994px) {
+    .training_title{
+        /* width: 90%; */
+        font-family: "Montserrat";
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+    /* .training_about .training_body{
+        padding-right: 100px;
+    } */
+    /* .training_about p:not(:last-child){
+        margin-bottom: 32px;
+    } */
+    .training_vide_text{
+        margin-top: 64px;
+    }
+    /* .center_ab_img{
+        padding-top: 170px;
+    } */
+}
+    /*
+@media (min-width: 765px) and (max-width: 994px) {
+    .center_ab_img{
+        padding-top: 140px;
+    }
+} */
+.training_about .title, .body-container .title {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    /* display: block; */
+}
+@media (max-width: 993px) {
+    .training_about .title, .body-container .title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    p.margin-bottom-32 {
+        margin-bottom: 16px !important;
+    }
+    .news_card.news_default.margin-bottom-32 {
+        margin-bottom: 16px !important;
+    }
+    .body-container.margin-bottom-30.news-32 {
+        margin-bottom: 4px !important;
+    }
+    .body-container.padding-bottom-40.padding-top-30 {
+        padding: 20px !important;
+    }
+    .bg_grey {
+        padding: 20px 0 !important;
+    }
+    /* .training_about {
+        padding: 20px 0 !important;
+    } */
+    .training_about.margin-bottom-40 {
+        margin-bottom: 20px !important;
+    }
+    .training_rew h4 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+    .training_rew {
+        padding-bottom: 20px;
+    }
+    .training_about .row {
+        flex-flow: wrap;
+    }
+    .training_about .row .center_ab_img {
+        margin: 0 auto !important;
+    }
+    .training_about .row .training_body {
+        max-width: none;
+        margin-top: 16px;
+    }
+    .training_about .row .training_body .flex {
+        justify-content: center;
+    }
+    .training_title{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    /* .training_about p:not(:last-child){
+        margin-bottom: 20px;
+    } */
+    .training_about .col-md-4{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .training_about .col-md-4 .flex{
+        justify-content: center;
+    }
+    .training_vide_text{
+        margin-top: 30px;
+    }
+    .training_video{
+        padding-bottom: 30px;
+    }
+    .col_big_video{
+        margin-bottom: 30px;
+    }
+}

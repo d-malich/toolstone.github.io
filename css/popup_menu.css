@@ -1,0 +1,171 @@
+.fix_popup_menu{
+    /* text-transform: uppercase; */
+    font-family: "FuturaMediumC";
+    letter-spacing: 0.06px;
+    font-weight: 500;
+    background: var(--bgBlack);
+    color: #fff;
+    z-index: 50;
+    right: 2px;
+    /* top: 196px; */
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 4px 8px 4px 12px;
+    cursor: pointer;
+    transform-origin: 100% 100% 0;
+    transform: rotate(-90deg);
+    /* top: 196px; */
+    /* -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: rotate(-90deg) translate(-90%, -50%);
+    -moz-transform: rotate(-90deg) translate(-90%, -50%);
+    -ms-transform: rotate(-90deg) translate(-90%, -50%);
+    -o-transform: rotate(-90deg) translate(-90%, -50%);
+    transform: rotate(-90deg) translate(-50%, -50%); */
+}
+.fix_popup_menu:not(.sticky){
+    position: fixed;
+}
+.fix_popup_menu.sticky{
+    position: fixed;
+}
+.fix_popup_menu i{
+    /* filter: brightness(0%) invert(100%); */
+    margin-left: 8px;
+}
+.fix_popup_menu i.ico_right_menu2{
+    width: 24px;
+    height: 24px;
+}
+
+.ico_burger_popup_menu_box {
+    max-width: 24px;
+    max-height: 24px;
+    margin-left: 8px;
+}
+.ico_burger_popup_menu {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.popup_dummy{
+    z-index: 60;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.popup_menu_container:not(.popup_product){
+    width: 316px;
+}
+.popup_menu_container.popup_product{
+    width: 393px;
+}
+.popup_menu_container .popup_header{
+    background: var(--linkBlack);
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 23px;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 2px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.2em;
+}
+.popup_menu_container .popup_header i.ico_right_menu_red{
+    width: 33px;
+    height: 20px;
+}
+.popup_menu_container .popup_header i.icon-right-arrow3{
+    font-size: 18px;
+}
+.popup_menu_container .popup_header .close_menu{
+    cursor: pointer;
+    color: var(--red);
+}
+.popup_menu_container .popup_content{
+    background: var(--mainBg);
+    border-radius: 0px 0px 0px 2px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    min-height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.popup_menu_container .popup_content{
+    padding: 0px 23px;
+}
+.popup_menu_container .list_menu{
+    font-size: 14px;
+    font-family: "FuturaMediumC";
+    line-height: 16px;
+}
+.popup_menu_container .list_menu li:not(:last-child){
+    border-bottom: 0.5px solid var(--borderColor);
+}
+.popup_menu_container .list_menu a{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    /* padding: 18px 0px; */
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--linkBlack);
+}
+.popup_menu_container .list_menu a:hover,
+.popup_menu_container .list_menu a.active{
+    color: var(--red);
+}
+.popup_menu_container .list_menu a i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.popup_menu_container .popup_image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 23%;
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 15px;
+    border-radius: 2px;
+    border: 0.5px solid var(--gray2);
+}
+.popup_menu_container .popup_image figure{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.popup_menu_container .popup_image figure picture{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.popup_menu_container .popup_image figure picture img{
+    object-fit: cover;
+    vertical-align: middle;
+    -o-object-fit: cover;
+}
+.fix_popup_menu.product_popup_menu {
+    padding-right: 50px;
+}

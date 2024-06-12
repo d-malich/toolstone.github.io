@@ -1,0 +1,210 @@
+.product_card{
+    border-radius: 2px;
+    /* border: 1px solid var(--borderColor7); */
+    position: relative;
+    margin-bottom: 24px;
+    background: var(--mainBg);
+}
+.product_card:hover {
+    color: var(--textRed);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+}
+.main{
+    padding: 0;
+}
+.product_card .product_image{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(100% - 4px);
+}
+.product_card .product_image figure{
+    margin: 0;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    /* width: 100%;
+    min-height: 100%; */
+    overflow: hidden;
+    border-radius: 2px;
+    /* max-height: 276px;
+    height: 276px; */
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 16px;
+    background-color: #F9FAFF;
+
+}
+.product_card .product_image figure picture{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.product_card .product_image figure picture img {
+    width: 110%;
+}
+.product_card .product_body{
+    padding: 0 20px 20px 20px;
+}
+.product_card .product_body .product_title{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.product_card .product_body a{
+    color: #020611;
+    font-size: 16px;
+    line-height: 19px;
+    display: inline-block;
+}
+.product_card:hover .product_body a {
+    color: var(--textRed);
+}
+.product_card .product_starline{
+    margin-bottom: 8px;
+}
+.product_card .product_starline .star_list{
+    color: var(--yellow);
+    font-size: 18px;
+}
+.product_card .product_starline .star_list i:not(:last-child){
+    margin-right: 7px;
+}
+.product_card .product_starline  .star_count{
+    color: var(--gray5);
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaBookC Regular";
+    margin-bottom: -5px;
+}
+.product_card .product_price .price{
+    color: var(--black);
+    font-family: "FuturaDemiC";
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+.product_card .product_price .price .icon-ruble {
+    font-size: 14px;
+    width: 12px;
+    margin-left: 4px;
+}
+.product_card .product_price .price_old{
+    font-size: 16px;
+    color: var(--gray5);
+    line-height: 16x;
+    font-family: "FuturaBookC Regular";
+    text-decoration-line: line-through;
+    margin-top: 1px;
+    display: none;
+}
+.product_card .product_price > div:not(:last-child){
+    margin-right: 12px;
+}
+.product_card .add_card{
+    padding: 7px 8px;
+}
+.product_card .add_card > div {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_card .product_bookmark{
+    font-size: 18px;
+    color: var(--mainGreen);
+    position: absolute;
+    z-index: 5;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background: url(../image/ico/bookmark.svg) no-repeat;
+    background-position: center;
+}
+.product_card .product_bookmark:hover{
+    color: var(--mainGreen);
+}
+
+.sort_list .item img{
+    height: 12px;
+    transform: rotate(90deg);
+}
+
+.active_item img{
+    filter: brightness(0%);
+}
+.active_item .sort_link {
+    color: #020611;
+}
+
+.product_section {
+    /* padding: 40px 25px; */
+}
+
+.product_image {
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #F3F5FF;
+    border-bottom: none;
+}
+.product_body {
+    border-radius: 0 0 2px 2px;
+    border: 1px solid #F3F5FF;
+    border-top: none;
+}
+
+.bg_gray .product_image {
+    border: none;
+}
+.bg_gray .product_body {
+    border: none;
+}
+
+.front_new_product .swiper_button {
+    top: 158px;
+}
+@media (max-width: 993px) {
+    .product_card .product_body .product_title {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .product_card .product_body a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .product_card{
+        margin-bottom: 16px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1310px) {
+    .product_card .product_price .price_old{
+        font-size: 14px;
+    }
+    .product_card .product_price .price{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .product_section {
+        /* padding: 20px 5px; */
+    }
+    .product_card .product_price .price{
+        font-size: 18px;
+    }
+}
+.product_card.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}

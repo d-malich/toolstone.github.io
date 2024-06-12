@@ -1,0 +1,112 @@
+.brand_row .col{
+    /* border-bottom: 1px solid var(--gray2); */
+    padding: 0px;
+    min-height: fit-content;
+}
+.brand_row .row{
+    margin: 0px;
+}
+/* .brand_row:first-child .col{
+    border-top: 1px solid var(--gray2);
+} */
+.brand_card{
+    display: flex;
+    text-align: center;
+    color: var(--linkBlack);
+    font-size: 14px;
+    line-height: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+}
+.brand_card .brand_img{
+    margin-bottom: 16px;
+    width: 100%;
+    height: 32px;
+    max-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand_card .desc{
+    max-width: 152px;
+    font-family: "FuturaDemiC";
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.brand_section {
+    padding: 40px 25px;
+    padding-top: 0;
+}
+@media (min-width: 994px) {
+    /* .brand_row .col:not(:last-child){
+        border-right: 1px solid var(--gray2);
+    } */
+}
+@media (max-width: 993px) {
+    .brand_row .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 100%;
+    }
+    /* .brand_row .col:nth-child(5),
+    .brand_row .col:nth-child(3),
+    .brand_row .col:nth-child(1){
+        border-right: 1px solid var(--gray2);
+    } */
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    .brand_row .col{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    /* .brand_row .col:nth-child(3){
+        border-right: 0px;
+    }
+    .brand_row .col:nth-child(4),
+    .brand_row .col:nth-child(2){
+        border-right: 1px solid var(--gray2);
+    } */
+}
+
+@media (max-width: 768px) {
+    .brand_card .brand_img {
+        margin-bottom: 8px;
+    }
+    .col .brand_card .desc {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .brand_section {
+        padding: 20px 5px;
+    }
+    .brand_card{
+        padding: 10px 2.5px;
+        margin: 0;
+    }
+    .add-matgin-top-8 {
+        margin-top: 8px;
+    }
+    .adaptive-margin-bottom-20 {
+        margin-bottom: 20px !important;
+    }
+
+    section.padding-top-30.padding-bottom-40 {
+        padding: 20px 0 !important;
+    }
+    .flex.adaptive-news-title {
+        margin-bottom: 20px !important;
+    }
+    div.other_news.padding-bottom-40.padding-top-30 {
+        padding: 20px 0 !important;
+    }
+    section.padding-top-20.padding-bottom-40 {
+        padding-top: 0 !important;
+    }
+}
